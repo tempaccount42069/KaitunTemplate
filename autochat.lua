@@ -1,4 +1,4 @@
--- Define the spamming state
+-- WONT LOAD WITH MAIN SCRIPT!
 local spamming = true -- Set to true to keep spamming
 
 -- Function to start spamming
