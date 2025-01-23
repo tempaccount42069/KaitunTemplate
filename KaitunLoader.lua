@@ -1,10 +1,34 @@
 -- Load and execute the first script
-local script1 = game:HttpGet("https://raw.githubusercontent.com/tempaccount42069/KaitunTemplate/refs/heads/main/KaitunLoader.lua", true)
-loadstring(script1)()
+local success1, script1 = pcall(function()
+    return game:HttpGet("https://raw.githubusercontent.com/tempaccount42069/KaitunTemplate/refs/heads/main/KaitunLoader.lua", true)
+end)
 
--- Wait for the first script to complete if needed
-wait(1) -- Adjust the wait time if the first script takes longer to initialize
+if success1 then
+    local load1 = loadstring(script1)
+    if load1 then
+        load1()
+    else
+        warn("Failed to load KaitunLoader.lua")
+    end
+else
+    warn("Error loading KaitunLoader.lua: " .. script1)
+end
+
+-- Wait for the first script to complete if needed (consider using an event or callback in a real scenario)
+wait(1)
 
 -- Load and execute the second script
-local script2 = game:HttpGet("https://raw.githubusercontent.com/tempaccount42069/KaitunTemplate/refs/heads/main/autochat.lua", true)
-loadstring(script2)()
+local success2, script2 = pcall(function()
+    return game:HttpGet("https://raw.githubusercontent.com/tempaccount42069/KaitunTemplate/refs/heads/main/autochat.lua", true)
+end)
+
+if success2 then
+    local load2 = loadstring(script2)
+    if load2 then
+        load2()
+    else
+        warn("Failed to load autochat.lua")
+    end
+else
+    warn("Error loading autochat.lua: " .. script2)
+end
