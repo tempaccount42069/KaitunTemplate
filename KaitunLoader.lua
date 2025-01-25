@@ -11,7 +11,7 @@ getgenv().simple_settings = {
             ["RACE-LOCK"] = true, -- Automatically change the character race if not in the list
             ["RACE-V3"] = true, -- Automatically upgrade character race to V3 if possible Human, Mink, (Fishman, Ghoul, Cyborg) soon
         },
-        ["FRAGMENT"] = 30000, -- Limit number of fragments to collect
+        ["FRAGMENT"] = 100000, -- Limit number of fragments to collect
 
         -- SWORD
         ["CANVANDER"] = true,
