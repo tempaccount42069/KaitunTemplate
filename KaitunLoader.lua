@@ -31,13 +31,6 @@ getgenv().simple_settings = {
     ["FRUITPURCHASE"] = true, -- Automatically purchase fruits based on priority list
     ["PRIORITYFRUIT"] = { -- List of preferred fruits to purchase or eat in order of priority
         [1] = "Dragon-Dragon",
-        [2] = "Gas-Gas",
-        [2] = "Yeti-Yeti",
-        [3] = "Dough-Dough",
-        [4] = "Portal-Portal",
-        [5] = "Rumble-Rumble",
-        [6] = "Human-Human: Buddha",
-        [7] = "Dark-Dark",
     },
 
     ["FPSCAP"] = 30, -- Limit the frame rate to optimize performance
